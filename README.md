@@ -25,7 +25,7 @@ A powerful World of Warcraft addon for **Project Ascension (3.3.5a)** that displ
 ## 🛠️ Ascension Edition (by Xurkon)
 
 This version is an unofficial backport and optimization of **Bytespire's** original addon, specifically tuned for the unique constraints of the 3.3.5a client on Project Ascension by **Xurkon**:
-- **Optimized ID Luckup**: Uses robust item link parsing to handle items not yet in your local cache.
+- **Optimized ID Lookup**: Uses robust item link parsing to handle items not yet in your local cache.
 - **Performance**: High-speed texture loading using direct file paths.
 - **Reliability**: character-specific settings that persist across logins and reloads.
 
