@@ -2,7 +2,7 @@
 
 [![Version](https://img.shields.io/badge/version-1.2.0--Ascension-green.svg)](https://github.com/Xurkon/ITPI-Ascension/releases)
 [![Platform](https://img.shields.io/badge/platform-WoW%203.3.5a-purple.svg)](https://github.com/Xurkon/ITPI-Ascension)
-[![Downloads](https://img.shields.io/github/downloads/Xurkon/ITPI-Ascension/total.svg)](https://github.com/Xurkon/ITPI-Ascension/releases)
+![Downloads](https://img.shields.io/github/downloads/Xurkon/ITPI-Ascension/total?style=for-the-badge&label=DOWNLOADS&color=e67e22)
 [![Docs](https://img.shields.io/badge/docs-v1.2.0-blue.svg)](https://Xurkon.github.io/ITPI-Ascension/)
 [![Patreon](https://img.shields.io/badge/Patreon-Support-orange?style=for-the-badge&logo=patreon)](https://patreon.com/Xurkon)
 [![PayPal](https://img.shields.io/badge/PayPal-Donate-blue?style=for-the-badge&logo=paypal)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=kancerous@gmail.com)
