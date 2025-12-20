@@ -4,6 +4,8 @@
 [![Platform](https://img.shields.io/badge/platform-WoW%203.3.5a-purple.svg)](https://github.com/Xurkon/ITPI-Ascension)
 [![Downloads](https://img.shields.io/github/downloads/Xurkon/ITPI-Ascension/total.svg)](https://github.com/Xurkon/ITPI-Ascension/releases)
 [![Docs](https://img.shields.io/badge/docs-v1.2.0-blue.svg)](https://Xurkon.github.io/ITPI-Ascension/)
+[![Patreon](https://img.shields.io/badge/Patreon-Support-orange?style=for-the-badge&logo=patreon)](https://patreon.com/Xurkon)
+[![PayPal](https://img.shields.io/badge/PayPal-Donate-blue?style=for-the-badge&logo=paypal)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=kancerous@gmail.com)
 
 A powerful World of Warcraft addon for **Project Ascension (3.3.5a)** that displays profession and quest requirement icons directly onto item tooltips.
 
