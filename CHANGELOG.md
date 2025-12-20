@@ -10,6 +10,9 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - Fixed technical typo "Luckup" to "Lookup" in all documentation and descriptions.
 - Synchronized versioning across all metadata points (.toc, README, docs).
+- **Documentation Standardization**:
+  - Replaced the acronym "ITPI" with the full name "ItemTooltipProfessionIcons" in all user-facing documentation for clarity and professionalism.
+  - Updated documentation titles and headings to reflect the full addon name.
 
 
 ## [1.1.0-Ascension] - 2025-12-19
