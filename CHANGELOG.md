@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0-Ascension] - 2025-12-19
+### Added
+- Professional badges for total downloads and documentation hub in README.
+- "At a Glance" summary section to the project README for quicker value proposition.
+
+### Fixed
+- Fixed technical typo "Luckup" to "Lookup" in all documentation and descriptions.
+- Synchronized versioning across all metadata points (.toc, README, docs).
+
+
 ## [1.1.0-Ascension] - 2025-12-19
 ### Backport & Optimization (3.3.5a / Project Ascension)
 - **Author**: Xurkon
