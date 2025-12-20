@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITPI Ascension - Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-primary: #0d1117;
+            --bg-secondary: #161b22;
+            --bg-tertiary: #21262d;
+            --text-primary: #c9d1d9;
+            --text-secondary: #8b949e;
+            --accent-green: #3fb950;
+            --accent-blue: #58a6ff;
+            --accent-purple: #a371f7;
+            --accent-orange: #d29922;
+            --border-color: #30363d;
+            --code-bg: #1f2428;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #162030 0%, #0d1117 50%, #1a1f35 100%);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(ellipse at center top, rgba(163, 113, 247, 0.1) 0%, transparent 50%);
+            pointer-events: none;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            margin-bottom: 30px;
+        }
+
+        .badges {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 6px 12px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+        }
+
+        .badge.version {
+            border-color: var(--accent-green);
+            color: var(--accent-green);
+        }
+
+        .badge.platform {
+            border-color: var(--accent-purple);
+            color: var(--accent-purple);
+        }
+
+        .btn-download {
+            display: inline-block;
+            background: var(--accent-purple);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.2s, background 0.2s;
+        }
+
+        .btn-download:hover {
+            background: #8e5ce6;
+            transform: translateY(-2px);
+        }
+
+        /* Content Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 60px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-primary);
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin: 30px 0 15px;
+            color: var(--text-primary);
+        }
+
+        p {
+            margin-bottom: 15px;
+            color: var(--text-secondary);
+        }
+
+        /* Feature Grid */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background: var(--bg-secondary);
+            border: 1px solid var(--border-color);
+            padding: 25px;
+            border-radius: 12px;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-purple);
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            font-size: 1.25rem;
+            color: var(--accent-purple);
+        }
+
+        /* Tables */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 30px;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+
+        td {
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        a {
+            color: var(--accent-blue);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="badges">
+            <span class="badge version">v1.1.0-Ascension</span>
+            <span class="badge platform">WoW 3.3.5a</span>
+            <a href="https://github.com/Xurkon/ITPI-Ascension" class="badge">GitHub</a>
+        </div>
+        <h1>ITPI Ascension</h1>
+        <p class="subtitle">Premium Profession & Quest Requirement Icons for your Tooltips</p>
+        <a href="https://github.com/Xurkon/ITPI-Ascension/releases" class="btn-download">Download Latest</a>
+    </div>
+
+    <div class="container">
+
+        <!-- Features -->
+        <section id="features">
+            <h2>✨ Feature Highlights</h2>
+            <div class="features">
+                <div class="feature-card">
+                    <h3>🛠️ Profession Visuals</h3>
+                    <p>Instantly identify reagents for all crafting professions. Icons are drawn directly from the
+                        game's high-res assets.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📜 Quest Intel</h3>
+                    <p>Dynamic icons show whether an item is needed for faction-specific or class-specific quests. Never
+                        sell a quest item again.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📐 Scale to Fit</h3>
+                    <p>Adjust icon scale from 8px to 64px to perfectly match your UI theme and resolution.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⚡ 3.3.5a Optimized</h3>
+                    <p>Specifically tuned for the Ascension client with enhanced ID extraction and event-driven
+                        configuration.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Specs -->
+        <section id="tech-specs">
+            <h2>🛠️ Technical Implementation</h2>
+            <p>ITPI Ascension represents a massive overhaul of the original logic by <strong>Bytespire</strong>, rebuilt
+                by <strong>Xurkon</strong> to solve the unique challenges of the 3.3.5a client.</p>
+
+            <h3>Core Enhancements</h3>
+            <ul>
+                <li><strong>Safe Hooking</strong>: Uses <code>HookScript</code> instead of prototype overrides, ensuring
+                    100% compatibility with TSM, ElvUI, and other major addons.</li>
+                <li><strong>Link Parsing</strong>: Pulls IDs from item strings to ensure icons display even on uncached
+                    Auction House items.</li>
+                <li><strong>Hardcoded Paths</strong>: Bypasses spell-database lag by using direct Blizzard file paths
+                    for icons.</li>
+            </ul>
+        </section>
+
+        <!-- Usage Guide -->
+        <section id="usage">
+            <h2>📖 Commands & Usage</h2>
+
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><code>/itpi</code></td>
+                    <td>Opens the graphical configuration window</td>
+                </tr>
+                <tr>
+                    <td><code>/itpi test</code></td>
+                    <td>Displays status info (database count, character detection)</td>
+                </tr>
+                <tr>
+                    <td><code>/itpi debug</code></td>
+                    <td>Toggles technical messages for troubleshooting</td>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>ItemTooltipProfessionIcons (Ascension Edition) | Original by Bytespire | Backport by Xurkon</p>
+    </footer>
+
+</body>
+
+</html>
