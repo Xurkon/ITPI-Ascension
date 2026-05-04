@@ -40,3 +40,7 @@ All notable changes to this project will be documented in this file.
   - Removed all hardcoded debug prints from the main tooltip loop for a clean user experience.
   - Standardized texture strings to the `|TTexture:Size|t` format for maximum client compatibility.
   - Reorganized project constants into a centralized `ItemProfConstants` global table.
+
+
+## [Unreleased] — Test — 2026-05-04
+- Test changelog diff display
